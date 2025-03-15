@@ -1,0 +1,102 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        main {
+            width: 100%;
+            min-height: 100vh;
+            background: linear-gradient(45deg, #11120f, #1f31ce);
+            color: #fff;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .square {
+            height: 200px;
+            width: 200px;
+            border-radius: 5px;
+            background-color: rgb(255, 84, 141);
+            position: absolute;
+            top: 25%;
+            left: 20%;
+        }
+
+        .rectangle {
+            height: 200px;
+            width: 600px;
+            position: absolute;
+            background: #f41b75;
+            backdrop-filter: blur(40px);
+            background: transparent;
+            border-radius: 20px;
+            top: 40%;
+            left: 28%;
+            z-index: 11;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: end;
+            border: 1px solid grey;
+            color: #fff;
+
+            span {
+                display: inline-block;
+                font-size: 80px;
+                width: 110px;
+                text-align: center;
+                position: relative;
+            }
+
+            #hrs::after {
+                content: "Hours";
+                font-size: 1rem;
+                position: absolute;
+                left: 50%;
+                bottom: -30%;
+                transform: translateX(-50%);
+
+            }
+
+            #min::after {
+                content: "Minutes";
+                font-size: 1rem;
+                position: absolute;
+                left: 50%;
+                bottom: -30%;
+                transform: translateX(-50%);
+
+            }
+
+            #sec::after {
+                content: "Seconds";
+                font-size: 1rem;
+                position: absolute;
+                left: 50%;
+                bottom: -30%;
+                transform: translateX(-50%);
+            }
+        }
+
+        .circle {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            background-color: rgb(110, 149, 255);
+            position: absolute;
+            top: 50%;
+            right: 25%;
+
+        }
+   
